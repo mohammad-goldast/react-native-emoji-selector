@@ -298,9 +298,9 @@ export default class EmojiSelector extends Component {
     const { category, colSize, isReady, searchQuery } = this.state;
 
     const Searchbar = (
-      <View style={styles.searchbar_container}>
+      <View style={[styles.searchbar_container,searchbarContainerStyle]}>
         <TextInput
-          style={{...styles.search, ...searchbarStyle}}
+          style={[styles.search, searchbarStyle]}
           placeholder={placeholder}
           clearButtonMode="always"
           returnKeyType="done"
