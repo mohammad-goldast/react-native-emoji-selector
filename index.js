@@ -307,6 +307,7 @@ export default class EmojiSelector extends Component {
           autoCorrect={false}
           value={searchQuery}
           onChangeText={this.handleSearch}
+          placeholderTextColor={placeholderTextColor}
         />
       </View>
     );
