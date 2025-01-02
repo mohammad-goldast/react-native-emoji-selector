@@ -95,7 +95,7 @@ const TabBar = ({ theme, activeCategory, showHistory, onPress, width, categoryBu
               textAlign: "center",
               paddingBottom: 8,
               paddingTop: 3,
-              fontSize: tabSize - 20,
+              fontSize: (tabSize - 20) < 10 ? 10 : tabSize - 20, 
               ...categoryTextStyle
             }}
           >
